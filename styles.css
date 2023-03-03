@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
+:root {
+    --desaturatedRed: hsl(0, 36%, 70%);
+    --softRed: hsl(0, 93%, 68%);
+    --darkGrayishRed: hsl(0, 6%, 24%);
+    --Gradient1: Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%);
+    --Gradient2: Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%);
+}
+
 html {
     padding: 0;
     margin: 0;
@@ -9,6 +17,7 @@ html {
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    font-size: 16px;
     height: auto;
     width: 100%;
     overflow: hidden;
@@ -21,16 +30,23 @@ body {
 }
 
 /* TITLE */
-.title h1 {
+.title  {
     font-weight: 600;
+    font-size: 80px;
+    letter-spacing: 10px;
+    color: var(--darkGrayishRed);
 }
 .title-hl {
     font-weight: 300;
+    color: var(--desaturatedRed);
 }
 
 /* PARAGRAPH */
 .text {
     font-weight: 400;
+    color: var(--desaturatedRed);
+    width: 500px;
+    line-height: 30px;
 }
 
 /* LAYOUT */
@@ -38,22 +54,21 @@ body {
     display: flex;
     justify-content: space-between;
     height: auto;
-    margin-top: -10%;
 }
 .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-left: 0%;
+    padding: 0 5% 0 5%;
     width: 50%;
+    height: 500px;
 }
 .right {
     background-image: url(./images/hero-desktop.jpg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: -1;
-    margin-top: 0;
+    margin-top: -10%;
     width: 45%;
     height: 800px;
 }
-
