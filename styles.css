@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
 
-html, body {
+html {
     padding: 0;
     margin: 0;
+    height: auto;
     box-sizing: border-box;
 }
 
 body {
     font-family: 'Josefin Sans', sans-serif;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
 }
 
 /* NAV */
@@ -33,20 +37,23 @@ body {
 .main {
     display: flex;
     justify-content: space-between;
-    height: 700px;
+    height: auto;
+    margin-top: -10%;
 }
 .left {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-left: 0%;
     width: 50%;
 }
 .right {
     background-image: url(./images/hero-desktop.jpg);
-    background-size: cover;
-    background-size: 100% 120%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     z-index: -1;
-    margin-top: -7%;
-    width: 50%;
+    margin-top: 0;
+    width: 45%;
+    height: 800px;
 }
+
