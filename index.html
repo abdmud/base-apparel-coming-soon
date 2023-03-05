@@ -29,10 +29,11 @@
         Add your email below to stay up-to-date with announcements and our launch deals.</p>
   
       <form action="" class="form">
-        <input type="email" name="email" id="email" placeholder="Email Address">
-        <img src="./images/icon-error.svg" class="error" alt="error-icon">
-        <button type="submit" class="button"><img src="./images/icon-arrow.svg" alt="button-icon"></button>
+        <input type="email" name="email" id="email" placeholder="Email Address" pattern="[a-zA-Z]+">
+        <img src="./images/icon-error.svg" class="error hidden" alt="error-icon">
+        <button type="submit" class="button active"><img src="./images/icon-arrow.svg" alt="button-icon"></button>
       </form>
+      <p class="error-msg hidden">Please provide a valid email</p>
     </div>
 
     <div class="right">
@@ -47,5 +48,7 @@
       Coded by <a href="#">Ar.</a>.-->
     </p>
   </footer>
+
+  <script src="./index.js"></script>
 </body>
 </html>
